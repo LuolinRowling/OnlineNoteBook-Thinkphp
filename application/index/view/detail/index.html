@@ -1,0 +1,10 @@
+{include file='common/header'}   
+    <div class="am-g am-container l-container l-input">
+        <h1>{$data.note.title}</h1>
+        <div style="margin-bottom:5px;"><span class="am-badge am-badge-secondary am-radius">{$data.note.tag}</span></div>    
+        <span class="create-time">
+            {$data.note.createTime}
+        </span>        
+        <p>{$data.note.content}</p>
+    </div>
+{include file='common/footer'}   

@@ -1,0 +1,26 @@
+{include file='common/header'}     
+    <div class="am-g am-container l-container-s">
+    <table class="am-table am-table-striped am-table-hover">
+            <thead>
+                <tr>
+                    <td>标题</td>
+                    <td>标签</td>
+                    <td>日期</td>
+                </tr>
+            </thead>
+            <tbody>
+                {foreach $data.notes as $note} 
+
+                    <tr>
+                        <td><a href="http://localhost/tp5/public/index.php/index/detail/index?id={$note.id}">{$note.title}</a></td>
+                        <td>{$note.tag}</td>
+                        <!--<td><%= note.createTime %></td>-->                    
+                        <td> {$note.createTime}</td>
+                    </tr>
+        
+                {/foreach}
+
+            </tbody>
+        </table>
+    </div>   
+{include file='common/footer'}   
